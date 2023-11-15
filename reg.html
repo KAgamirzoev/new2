@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="reg\reg.css"rel="stylesheet">
+    <title>Регистрация</title>
+</head>
+<body>
+  <div class="container">
+      <form action="process_registration.php" method="POST">
+          <h2>Регистрация</h2>
+          
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="password">Пароль:</label>
+          <input type="password" id="password" name="password" required>
+
+          <button type="submit">Зарегистрироваться</button>
+      </form>
+      
+      <div class="external-login">
+          <p>Или войдите с помощью:</p>
+          <a href="#" class="google-login">Google</a>
+          <a href="#" class="facebook-login">Facebook</a>
+      </div>
+  </div>
+</body>
+</html>
+
